@@ -24,6 +24,17 @@ Steps to create a project:
             <groupId>org.glassfish.jersey.media</groupId>
             <artifactId>jersey-media-json-binding</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
+            <version>3.0.0</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.media</groupId>
+            <artifactId>jersey-media-jaxb</artifactId>
+            <version>3.0.2</version><!--$NO-MVN-MAN-VER$-->
+        </dependency>
    5. There will be an errorin the index.html, for resolving this right click on the project => Build Path=> Configure Build Path=> Project Facet=> Runtimes=>Tomcat 10
    6. Now right click on the project => Maven=> Update Project=> select force update=> Ok
    7. Now your Rest project is ready to work on.
