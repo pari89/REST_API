@@ -36,6 +36,15 @@ public class AlienResource {
 		return ar.getAlien(id);
 	}
 	
+	@HEAD
+	@Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
+	public List<Alien> headAlien() throws ClassNotFoundException
+	{
+		//System.out.println("yo");
+		
+		return ar.getAliens();
+	}
+	
 	@POST
 	@Path("alien")
 	@Consumes({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
